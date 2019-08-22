@@ -1,1 +1,16 @@
 # Just create any Type and query you'd like!
+type Person {
+    name: String!
+}
+
+input NewPersonInput {
+    name: String!
+}
+
+type Query {
+    onePerson(id: ID!): Person!
+}
+
+type Mutation {
+    newPerson(input: NewPersonInput!): Person!
+}
