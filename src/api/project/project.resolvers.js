@@ -31,5 +31,8 @@ module.exports = {
       return project._id + ''
     },
     // resolve some fields here
+    name(project) {
+      return project.name
+    }
   }
 }
